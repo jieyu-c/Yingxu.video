@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Yingxu-database" />
         <module name="Yingxu-web" />
         <module name="Yingxu-ddd" />
         <module name="Yingxu-identity" />
@@ -15,6 +16,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Yingxu-database" options="-parameters" />
+      <module name="Yingxu-ddd" options="-parameters" />
       <module name="Yingxu-identity" options="-parameters" />
       <module name="Yingxu-web" options="-parameters" />
     </option>

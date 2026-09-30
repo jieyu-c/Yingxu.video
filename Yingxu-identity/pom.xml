@@ -30,6 +30,11 @@
         </dependency>
         <dependency>
             <groupId>cn.jieyuc.yingxu.video</groupId>
+            <artifactId>Yingxu-database</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.jieyuc.yingxu.video</groupId>
             <artifactId>Yingxu-web</artifactId>
             <version>${project.version}</version>
         </dependency>

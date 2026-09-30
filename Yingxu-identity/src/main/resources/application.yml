@@ -1,3 +1,13 @@
 spring:
   application:
     name: Yingxu-identity
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/yingxu_video}
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true

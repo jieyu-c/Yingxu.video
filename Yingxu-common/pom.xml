@@ -18,6 +18,7 @@
         <module>Yingxu-authing</module>
         <module>Yingxu-satoken</module>
         <module>Yingxu-ddd</module>
+        <module>Yingxu-database</module>
     </modules>
 
 </project>
