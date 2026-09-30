@@ -7,13 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Yingxu-web" />
+        <module name="Yingxu-ddd" />
         <module name="Yingxu-identity" />
+        <module name="Yingxu-satoken" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Yingxu-identity" target="21" />
-      <module name="Yingxu-web" target="21" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

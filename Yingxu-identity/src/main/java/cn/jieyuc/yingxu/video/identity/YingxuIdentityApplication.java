@@ -1,4 +1,4 @@
-package cn.jieyuc.yingxu.video;
+package cn.jieyuc.yingxu.video.identity;
 
 
 import org.springframework.boot.SpringApplication;

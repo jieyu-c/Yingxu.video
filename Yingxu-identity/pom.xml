@@ -19,17 +19,34 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.version>0.0.1-SNAPSHOT</project.version>
+        <hutool.version>5.8.46</hutool.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>cn.jieyuc.yingxu.video</groupId>
+            <artifactId>Yingxu-ddd</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>cn.jieyuc.yingxu.video</groupId>
             <artifactId>Yingxu-web</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>cn.jieyuc.yingxu.video</groupId>
+            <artifactId>Yingxu-authing</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.jieyuc.yingxu.video</groupId>
+            <artifactId>Yingxu-satoken</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
     </dependencies>
 

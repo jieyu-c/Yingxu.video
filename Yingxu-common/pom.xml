@@ -15,6 +15,9 @@
 
     <modules>
         <module>Yingxu-web</module>
+        <module>Yingxu-authing</module>
+        <module>Yingxu-satoken</module>
+        <module>Yingxu-ddd</module>
     </modules>
 
 </project>
