@@ -142,3 +142,12 @@ final result: passed
 - Findings: no actionable P0/P1/P2 background-continuity differences. P3: exact cloud silhouette differs from the concept image because the atmospheric asset was generated independently.
 - Verification: `npm run build` passed; desktop browser capture inspected. Mobile capture was not completed in this pass.
 - final result: passed
+# Wide-screen homepage and logo verification · 2026-10-13
+
+- Source visual truth: user-supplied 2560 × 1318 screenshot at `/var/folders/dx/wb_c46k51f7c1wbd6l37tl_r0000gn/T/codex-clipboard-acdcc8ac-4be3-4060-a541-7eec870cd285.png`; approved logo board at `/Users/jieyuc/.codex/generated_images/01a12e11-61d6-7d31-b7da-2769445a21b4/exec-bf241ca2-00b7-4c0d-89a3-0c979263cf5f.png`.
+- Implementation: homepage at `http://localhost:4173/`; shared BrandLogo component and a `min-width: 1900px` responsive tier.
+- State and target viewport: homepage default state, 2560 × 1318 CSS pixels; ordinary desktop and mobile regression checks also intended.
+- Build/type check: `npm run build` passed after the changes.
+- Findings: the source screenshot shows a full-width backdrop with a 1320px content cap, leaving the hero, three-step row and case display undersized on a wide monitor. The new CSS widens those content regions to at most 1760px and scales their type, cards, and section heights together. The approved mark is now referenced by the shared website logo component; a separate monochrome PNG asset was added.
+- Verification gap: the in-app browser rejected the verification action under browser URL policy. No post-change browser screenshot, side-by-side comparison, focus-region comparison, or mobile render was available. Do not infer a visual pass from the build result.
+- final result: blocked
